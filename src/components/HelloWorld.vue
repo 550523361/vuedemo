@@ -49,7 +49,7 @@
         <span style="position: relative;">{{seq+1}}、</span><span>{{item.name}}</span><span :ref="'point_'+seq" class="pointSpan" style="position: relative;"><span >(</span><span style="position: absolute;display: inline-block;">{{points[seq].left}}、{{points[seq].top}}</span><span>)</span></span>
       </div>
       <button @click="getPoints">获取坐标</button>
-      <button @click="doPrint">打印</button>
+      <button @click="doPrint" style="display: inline-block;padding: 10px 15px;">打印</button>
     </div>
   </div>
 </template>

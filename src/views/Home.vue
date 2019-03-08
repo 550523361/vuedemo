@@ -48,8 +48,8 @@
       <div v-for="(item,seq) in itemList" :key="seq+'_'+item.value" class="itemContainer">
         <span style="position: relative;">{{seq+1}}、</span><span>{{item.name}}</span><span :ref="'point_'+seq" class="pointSpan" style="position: relative;"><span >(</span><span style="position: absolute;display: inline-block;">{{points[seq].left}}、{{points[seq].top}}</span><span>)</span></span>
       </div>
-      <button @click="getPoints">获取坐标</button>
-      <button @click="doPrint">打印</button>
+      <button @click="getPoints" style="display: inline-block;padding: 10px 15px;margin-bottom: 40px;margin-top: 30px;border-radius: 10px;margin-left: 20px;width: 200px;cursor: pointer;background: #00c9ff;color:#fff;">获取坐标</button>
+      <button @click="doPrint"  style="display: inline-block;padding: 10px 15px;margin-bottom: 40px;margin-top: 30px;border-radius: 10px;margin-left: 20px;width: 200px;cursor: pointer;background: blue;color:#fff;" title="点击打印测试">打印</button>
     </div>
   </div>
 </template>
